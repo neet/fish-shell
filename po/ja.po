@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: fish 1.21.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-08 16:50+0100\n"
-"PO-Revision-Date: 2018-07-17 00:25+0900\n"
+"PO-Revision-Date: 2018-07-17 18:52+0900\n"
 "Language-Team: English <fish-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: /home/david/src/fish-shell\n"
 "X-Generator: Poedit 2.0.9\n"
-"Last-Translator: Neetshin <neetshin@neetsh.in>\n"
+"Last-Translator: Neetshin <n33t5hin@gmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language: ja\n"
 
@@ -25,72 +25,78 @@ msgid ""
 "Could not autoload item '%ls', it is already being autoloaded. This is a "
 "circular dependency in the autoloading scripts, please remove it."
 msgstr ""
+"アイテム '%ls' をオートロードできませんでした、既にオートロードされています。"
+"オートロードスクリプト内で循環依存になっているため、削除してください。"
 
 #: src/builtin_argparse.cpp:36
 #, c-format
 msgid "%ls: Invalid option spec '%ls' at char '%lc'\n"
-msgstr ""
+msgstr "%ls: 無効なオプション '%ls' が '%lc' に指定されています\n"
 
 #: src/builtin_argparse.cpp:129
 #, c-format
 msgid "%ls: Mutually exclusive flags '%ls' and `%ls` seen\n"
-msgstr ""
+msgstr "%ls: 矛盾した排他的フラグ '%ls' と `%ls` が与えられました\n"
 
 #: src/builtin_argparse.cpp:160
 #, c-format
 msgid "%ls: exclusive flag string '%ls' is not valid\n"
-msgstr ""
+msgstr "%ls: 排他的フラグ文字列 '%ls' が無効です\n"
 
 #: src/builtin_argparse.cpp:176
 #, c-format
 msgid "%ls: exclusive flag '%ls' is not valid\n"
-msgstr ""
+msgstr "%ls: 排他的フラグ '%ls' が無効です\n"
 
 #: src/builtin_argparse.cpp:196
 #, c-format
 msgid ""
 "%ls: Implicit int short flag '%lc' does not allow modifiers like '%lc'\n"
 msgstr ""
+"%ls: 暗黙的な整数のショートフラグ '%lc' では '%lc' のような修飾子は許可されて"
+"いません\n"
 
 #: src/builtin_argparse.cpp:247
 #, c-format
 msgid "%ls: Short flag '#' must be followed by '-' and a long name\n"
 msgstr ""
+"%ls: ショートフラグ '#' の後には '-' と長い名前が続かなければなりません\n"
 
 #: src/builtin_argparse.cpp:252 src/builtin_argparse.cpp:276
 #, c-format
 msgid "%ls: Implicit int flag '%lc' already defined\n"
-msgstr ""
+msgstr "%ls: 暗黙的な整数フラグ '%lc' は既に定義されています\n"
 
 #: src/builtin_argparse.cpp:298
 #, c-format
 msgid "%ls: An option spec must have a short flag letter\n"
-msgstr ""
+msgstr "%ls: オプション指定は短いフラグ文字が必要です\n"
 
 #: src/builtin_argparse.cpp:305
 #, c-format
 msgid "%ls: Short flag '%lc' invalid, must be alphanum or '#'\n"
 msgstr ""
+"%ls: ショートフラグ '%lc' は無効です、英数か '#' でなければなりません\n"
 
 #: src/builtin_argparse.cpp:350
 #, c-format
 msgid "%ls: Missing -- separator\n"
-msgstr ""
+msgstr "%ls: セパレータ -- が不足しています\n"
 
 #: src/builtin_argparse.cpp:356 src/builtin_argparse.cpp:427
 #, c-format
 msgid "%ls: No option specs were provided\n"
-msgstr ""
+msgstr "%ls: オプション指定が提供されていません\n"
 
 #: src/builtin_argparse.cpp:391
 #, c-format
 msgid "%ls: Invalid --min-args value '%ls'\n"
-msgstr ""
+msgstr "%ls: --min-args の値 '%ls' は無効です\n"
 
 #: src/builtin_argparse.cpp:401
 #, c-format
 msgid "%ls: Invalid --max-args value '%ls'\n"
-msgstr ""
+msgstr "%ls: --max-args の値 '%ls' は無効です\n"
 
 #: src/builtin_bg.cpp:23
 #, c-format
@@ -98,131 +104,133 @@ msgid ""
 "%ls: Can't put job %d, '%ls' to background because it is not under job "
 "control\n"
 msgstr ""
+"%ls: ジョブコントロール外のため、ジョブ %d, '%ls' をバックグラウンドで実行で"
+"きませんでした\n"
 
 #: src/builtin_bg.cpp:29
 #, c-format
 msgid "Send job %d '%ls' to background\n"
-msgstr ""
+msgstr "ジョブ %d '%ls' をバックグラウンドへ送信します\n"
 
 #: src/builtin_bg.cpp:63 src/builtin_disown.cpp:69 src/builtin_fg.cpp:49
 #, c-format
 msgid "%ls: There are no suitable jobs\n"
-msgstr ""
+msgstr "%ls: 適切なジョブがありません\n"
 
 #: src/builtin_bg.cpp:80 src/builtin_disown.cpp:82 src/builtin_wait.cpp:147
 #, c-format
 msgid "%ls: '%ls' is not a valid job specifier\n"
-msgstr ""
+msgstr "%ls: '%ls' は有効なジョブ指定子ではありません\n"
 
 #: src/builtin_bg.cpp:95 src/builtin_disown.cpp:89 src/builtin_wait.cpp:163
 #, c-format
 msgid "%ls: Could not find job '%d'\n"
-msgstr ""
+msgstr "%ls: ジョブ '%d' が見つかりませんでした\n"
 
 #: src/builtin_bind.cpp:141
 #, c-format
 msgid "%ls: No key with name '%ls' found\n"
-msgstr ""
+msgstr "%ls: キー '%ls' が見つかりませんでした\n"
 
 #: src/builtin_bind.cpp:143
 #, c-format
 msgid "%ls: Key with name '%ls' does not have any mapping\n"
-msgstr ""
+msgstr "%ls: キー '%ls' にはマッピングがありません\n"
 
 #: src/builtin_bind.cpp:146
 #, c-format
 msgid "%ls: Unknown error trying to bind to key named '%ls'\n"
-msgstr ""
+msgstr "%ls: キー '%ls' へのバインド時に不明なエラーが発生しました\n"
 
 #: src/builtin_bind.cpp:239
 #, c-format
 msgid "%ls: No binding found for key '%ls'\n"
-msgstr ""
+msgstr "%ls: キー '%ls' にバインドが見つかりませんでした\n"
 
 #: src/builtin_bind.cpp:242
 #, c-format
 msgid "%ls: No binding found for sequence '%ls'\n"
-msgstr ""
+msgstr "%ls: シーケンス '%ls' へのバインドが見つかりませんでした\n"
 
 #: src/builtin_bind.cpp:406
 #, c-format
 msgid "%ls: Invalid state\n"
-msgstr ""
+msgstr "%ls: 無効な状態\n"
 
 #: src/builtin_block.cpp:89
 #, c-format
 msgid "%ls: Can not specify scope when removing block\n"
-msgstr ""
+msgstr "%ls: ブロックの削除時にスコープを指定することはできません\n"
 
 #: src/builtin_block.cpp:94
 #, c-format
 msgid "%ls: No blocks defined\n"
-msgstr ""
+msgstr "%ls: ブロックが定義されていません\n"
 
 #: src/builtin_cd.cpp:44
 #, c-format
 msgid "%ls: Could not find home directory\n"
-msgstr ""
+msgstr "%ls: ホームディレクトリが見つかりませんでした\n"
 
 #: src/builtin_cd.cpp:52 src/builtin_cd.cpp:79
 #, c-format
 msgid "%ls: '%ls' is not a directory\n"
-msgstr ""
+msgstr "%ls: '%ls' はディレクトリではありません\n"
 
 #: src/builtin_cd.cpp:55
 #, c-format
 msgid "%ls: The directory '%ls' does not exist\n"
-msgstr ""
+msgstr "%ls: ディレクトリ '%ls' は存在しません\n"
 
 #: src/builtin_cd.cpp:58
 #, c-format
 msgid "%ls: '%ls' is a rotten symlink\n"
-msgstr ""
+msgstr "%ls: シンボリックリンク '%ls' は壊れています\n"
 
 #: src/builtin_cd.cpp:61
 #, c-format
 msgid "%ls: Unknown error trying to locate directory '%ls'\n"
-msgstr ""
+msgstr "%ls: ディレクトリ '%ls' の検索中に不明なエラーが発生しました\n"
 
 #: src/builtin_cd.cpp:76
 #, c-format
 msgid "%ls: Permission denied: '%ls'\n"
-msgstr ""
+msgstr "%ls: アクセス許可が拒否されました: '%ls'\n"
 
 #: src/builtin_cd.cpp:90
 #, c-format
 msgid "%ls: Could not set PWD variable\n"
-msgstr ""
+msgstr "%ls: 変数 PWD を設定できませんでした\n"
 
 #: src/builtin_commandline.cpp:344
 #, c-format
 msgid "%ls: Unknown input function '%ls'"
-msgstr ""
+msgstr "%ls: 不明な入力関数 '%ls'"
 
 #: src/builtin_complete.cpp:183
 #, c-format
 msgid "%ls: Invalid token '%ls'\n"
-msgstr ""
+msgstr "%ls: 無効なトークン '%ls'\n"
 
 #: src/builtin_complete.cpp:203
 #, c-format
 msgid "%ls: -s requires a non-empty string\n"
-msgstr ""
+msgstr "%ls: -s は空でない文字列が必要です\n"
 
 #: src/builtin_complete.cpp:211
 #, c-format
 msgid "%ls: -l requires a non-empty string\n"
-msgstr ""
+msgstr "%ls: -l は空でない文字列が必要です\n"
 
 #: src/builtin_complete.cpp:219
 #, c-format
 msgid "%ls: -o requires a non-empty string\n"
-msgstr ""
+msgstr "%ls: -o は空でない文字列が必要です\n"
 
 #: src/builtin_contains.cpp:75
 #, c-format
 msgid "%ls: Key not specified\n"
-msgstr ""
+msgstr "%ls: キーが指定されていません\n"
 
 #: src/builtin.cpp:262
 #, c-format
@@ -230,221 +238,224 @@ msgid ""
 "%ls: Type 'help %ls' for related documentation\n"
 "\n"
 msgstr ""
+"%ls: 関連のドキュメントを閲覧するには 'help %ls' と入力してください\n"
+"\n"
 
 #: src/builtin.cpp:338
 #, c-format
 msgid "%ls: Not inside of loop\n"
-msgstr ""
+msgstr "%ls: ループ外です\n"
 
 #: src/builtin.cpp:372
 #, c-format
 msgid "%ls: Command not valid at an interactive prompt\n"
-msgstr ""
+msgstr "%ls: 対話的プロンプトではこのコマンドは無効です\n"
 
 #: src/builtin.cpp:410 src/builtin.cpp:460
 msgid "Test a condition"
-msgstr ""
+msgstr "条件をテストします"
 
 #: src/builtin.cpp:411
 msgid "Execute command if previous command suceeded"
-msgstr ""
+msgstr "直前のコマンドが成功した場合にコマンドを実行します"
 
 #: src/builtin.cpp:412
 msgid "Parse options in fish script"
-msgstr ""
+msgstr "Fishスクリプト内でオプションをパースします"
 
 #: src/builtin.cpp:413
 msgid "Create a block of code"
-msgstr ""
+msgstr "コードのブロックを作成します"
 
 #: src/builtin.cpp:414
 msgid "Send job to background"
-msgstr ""
+msgstr "バックグラウンドにジョブを送信します"
 
 #: src/builtin.cpp:415
 msgid "Handle fish key bindings"
-msgstr ""
+msgstr "キーバインドを処理します"
 
 #: src/builtin.cpp:416
 msgid "Temporarily block delivery of events"
-msgstr ""
+msgstr "イベントの伝播を一時的にブロックします"
 
 #: src/builtin.cpp:417
 msgid "Stop the innermost loop"
-msgstr ""
+msgstr "最も内側のループを停止します"
 
 #: src/builtin.cpp:419
 msgid ""
 "Temporarily halt execution of a script and launch an interactive debug prompt"
 msgstr ""
+"一時的に実行中のスクリプトを停止し、対話的デバッグプロンプトを起動します"
 
 #: src/builtin.cpp:420
 msgid "Run a builtin command instead of a function"
-msgstr ""
+msgstr "関数の代わりにビルトインコマンドを実行します"
 
 #: src/builtin.cpp:421 src/builtin.cpp:459
 msgid "Conditionally execute a block of commands"
-msgstr ""
+msgstr "コマンドのブロックを条件付きで実行します"
 
 #: src/builtin.cpp:422
 msgid "Change working directory"
-msgstr ""
+msgstr "現在のディレクトリを変更します"
 
 #: src/builtin.cpp:423
 msgid "Run a program instead of a function or builtin"
-msgstr ""
+msgstr "関数またはビルトインコマンドの代わりにプログラムを実行します"
 
 #: src/builtin.cpp:424
 msgid "Set or get the commandline"
-msgstr ""
+msgstr "コマンドラインを設定または取得します"
 
 #: src/builtin.cpp:425
 msgid "Edit command specific completions"
-msgstr ""
+msgstr "特定のコマンドの補完を編集します"
 
 #: src/builtin.cpp:426
 msgid "Search for a specified string in a list"
-msgstr ""
+msgstr "配列内の指定の文字列を検索します"
 
 #: src/builtin.cpp:428
 msgid "Skip the rest of the current lap of the innermost loop"
-msgstr ""
+msgstr "最も内側のループの現在の処理の残りをスキップします"
 
 #: src/builtin.cpp:429
 msgid "Count the number of arguments"
-msgstr ""
+msgstr "引数の個数を数えます"
 
 #: src/builtin.cpp:430
 msgid "Remove job from job list"
-msgstr ""
+msgstr "ジョブリストからジョブを削除します"
 
 #: src/builtin.cpp:431
 msgid "Print arguments"
-msgstr ""
+msgstr "引数を出力します"
 
 #: src/builtin.cpp:432
 msgid "Evaluate block if condition is false"
-msgstr ""
+msgstr "条件が false の場合にブロックを評価します"
 
 #: src/builtin.cpp:433
 msgid "Emit an event"
-msgstr ""
+msgstr "イベントを発生させます"
 
 #: src/builtin.cpp:434
 msgid "End a block of commands"
-msgstr ""
+msgstr "コマンドのブロックを終了します"
 
 #: src/builtin.cpp:435
 msgid "Run command in current process"
-msgstr ""
+msgstr "現在のプロセスでコマンドを実行します"
 
 #: src/builtin.cpp:436
 msgid "Exit the shell"
-msgstr ""
+msgstr "シェルを終了します"
 
 #: src/builtin.cpp:437
 msgid "Return an unsuccessful result"
-msgstr ""
+msgstr "不成功の結果を返します"
 
 #: src/builtin.cpp:438
 msgid "Send job to foreground"
-msgstr ""
+msgstr "ジョブをフォワグラウンドに送信します"
 
 #: src/builtin.cpp:439
 msgid "Perform a set of commands multiple times"
-msgstr ""
+msgstr "一連のコマンドを複数回実行します"
 
 #: src/builtin.cpp:440
 msgid "Define a new function"
-msgstr ""
+msgstr "新しい関数を定義します"
 
 #: src/builtin.cpp:441
 msgid "List or remove functions"
-msgstr ""
+msgstr "関数の一覧を表示あるいは削除します"
 
 #: src/builtin.cpp:442
 msgid "History of commands executed by user"
-msgstr ""
+msgstr "ユーザが実行したコマンドの履歴を表示します"
 
 #: src/builtin.cpp:443
 msgid "Evaluate block if condition is true"
-msgstr ""
+msgstr "条件が true のときにブロックを評価します"
 
 #: src/builtin.cpp:444
 msgid "Print currently running jobs"
-msgstr ""
+msgstr "現在実行されているジョブを表示します"
 
 #: src/builtin.cpp:445
 msgid "Evaluate math expressions"
-msgstr ""
+msgstr "数式の数値を求めます"
 
 #: src/builtin.cpp:446
 msgid "Negate exit status of job"
-msgstr ""
+msgstr "ジョブの終了ステータスを否定します"
 
 #: src/builtin.cpp:447
 msgid "Execute command if previous command failed"
-msgstr ""
+msgstr "直前のコマンドが失敗した場合にコマンドを実行します"
 
 #: src/builtin.cpp:448
 msgid "Prints formatted text"
-msgstr ""
+msgstr "フォーマットされたテキストを表示します"
 
 #: src/builtin.cpp:449
 msgid "Print the working directory"
-msgstr ""
+msgstr "作業ディレクトリを表示します"
 
 #: src/builtin.cpp:450
 msgid "Generate random number"
-msgstr ""
+msgstr "ランダムな数を生成します"
 
 #: src/builtin.cpp:451
 msgid "Read a line of input into variables"
-msgstr ""
+msgstr "入力された一行を変数に代入します"
 
 #: src/builtin.cpp:452
 msgid "Convert path to absolute path without symlinks"
-msgstr ""
+msgstr "パスをシンボリックリンク無しの絶対パスに変換します"
 
 #: src/builtin.cpp:453
 msgid "Stop the currently evaluated function"
-msgstr ""
+msgstr "現在評価されている関数を停止します"
 
 #: src/builtin.cpp:454
 msgid "Handle environment variables"
-msgstr ""
+msgstr "環境変数を処理します"
 
 #: src/builtin.cpp:455
 msgid "Set the terminal color"
-msgstr ""
+msgstr "ターミナルの色を設定します"
 
 #: src/builtin.cpp:456
 msgid "Evaluate contents of file"
-msgstr ""
+msgstr "ファイルの内容を評価します"
 
 #: src/builtin.cpp:457
 msgid "Return status information about fish"
-msgstr ""
+msgstr "Fishに関するステータス情報を返します"
 
 #: src/builtin.cpp:458
 msgid "Manipulate strings"
-msgstr ""
+msgstr "文字列を処理します"
 
 #: src/builtin.cpp:461
 msgid "Return a successful result"
-msgstr ""
+msgstr "成功の結果を返します"
 
 #: src/builtin.cpp:462
 msgid "Set or get the shells resource usage limits"
-msgstr ""
+msgstr "シェルリソースの使用制限を設定または取得する"
 
 #: src/builtin.cpp:463
 msgid "Wait for background processes completed"
-msgstr ""
+msgstr "バックグランドプロセスの終了を待ちます"
 
 #: src/builtin.cpp:464
 msgid "Perform a command multiple times"
-msgstr ""
+msgstr "コマンドを複数回実行します"
 
 #: src/builtin_disown.cpp:21
 #, c-format
@@ -62577,10 +62588,10 @@ msgid "Edit variable value"
 msgstr ""
 
 msgid "%ls: No function name given\n"
-msgstr "%ls: No function name given\n"
+msgstr "%ls: 関数名が指定されていません\n"
 
 msgid "%ls: --array option requires a single variable name.\n"
-msgstr "%ls: --array option requires a single variable name.\n"
+msgstr "%ls: --array オプションは1つのの変数名が必要です。\n"
 
 msgid "Try out the new parser"
 msgstr "Try out the new parser"
